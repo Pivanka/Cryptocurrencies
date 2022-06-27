@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CryptoCurrencies"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="760" Width="1260" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="MenuButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Height" Value="90"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border CornerRadius="30" Width="95" Background="#1D212C" Margin="20,25,28,25">
+            <StackPanel Orientation="Vertical">
+                <Button Margin="0,30,0,0" Style="{StaticResource MenuButtonStyle}">
+                    <Image Source="/img/diamond.png" Width="32" />
+                </Button>
+                <Button Margin="0,100,0,0" Style="{StaticResource MenuButtonStyle}">
+                    <Image Source="/img/collage.png" Width="22"/>
+                </Button>
+                <Button Style="{StaticResource MenuButtonStyle}">
+                    <Image Source="/img/convert.png" Width="22"/>
+                </Button>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1" Margin="27,78,52,0">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Top 10 " FontSize="26" FontFamily="Leelawadee"/>
+            <Separator Margin="0,30,0,0"/>
+        </StackPanel>
     </Grid>
 </Window>

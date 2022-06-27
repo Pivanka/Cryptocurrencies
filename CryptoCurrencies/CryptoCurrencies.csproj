@@ -101,5 +101,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\convert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\collage.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
