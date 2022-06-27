@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CryptoCurrencies
+namespace CryptoCurrencies.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CoinsView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CoinsView : Window
     {
-        public MainWindow()
+        public CoinsView()
         {
             InitializeComponent();
         }
