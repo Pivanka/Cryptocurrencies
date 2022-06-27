@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 
 namespace CryptoCurrencies.Models
 {
-    internal class CoinList
+    public class CoinList
     {
+        public ObservableCollection<Coin> Data { get; set; }
     }
 }

@@ -36,6 +36,18 @@
         <StackPanel Orientation="Vertical" Grid.Column="1" Margin="27,78,52,0">
             <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Top 10 " FontSize="26" FontFamily="Leelawadee"/>
             <Separator Margin="0,30,0,0"/>
+
+            <ListBox Grid.Column="1" Grid.Row="1"  ItemsSource="{Binding Coins}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="5">
+                            <TextBlock FontSize="18" Text="{Binding Rank}" />
+                            <TextBlock Text="{Binding Name}" />
+                            <TextBlock Text="{Binding PriceUsd}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </StackPanel>
     </Grid>
 </Window>

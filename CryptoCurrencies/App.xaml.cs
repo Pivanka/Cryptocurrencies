@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CryptoCurrencies.ViewModels;
+using CryptoCurrencies.Views;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +15,14 @@ namespace CryptoCurrencies
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            MainWindow = new CoinsView()
+            {
+                DataContext = new MainViewModel()
+            };
+            MainWindow.Show();
+            base.OnStartup(e);
+        }
     }
 }
