@@ -8,10 +8,10 @@
         Title="Criptocurrencies" Height="765" Width="1268" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Resources>
         <Style x:Key="MenuButtonStyle" TargetType="{x:Type Button}">
-            <Setter Property="Height" Value="90"/>
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderThickness" Value="0"/>
-        </Style>
+                <Setter Property="Height" Value="90"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="BorderThickness" Value="0"/>
+            </Style>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -33,18 +33,30 @@
             </StackPanel>
         </Border>
 
-        <StackPanel Orientation="Vertical" Grid.Column="1" Margin="27,78,52,0">
+        <StackPanel Orientation="Vertical" Grid.Column="1" Margin="27,78,15,0">
             <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Top 10 " FontSize="26" FontFamily="Leelawadee"/>
-            <Separator Margin="0,30,0,0"/>
-
+            <Separator Margin="0,15,0,0"/>
             <ListBox Grid.Column="1" Grid.Row="1"  ItemsSource="{Binding Coins}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Margin="5">
+                        <Grid Margin="0,10" Height="30">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock x:Name="textBlock2" Grid.Column="0" HorizontalAlignment="Left" Margin="20,0,0,0" TextWrapping="Wrap" Text="{Binding Symbol}" VerticalAlignment="Center" FontSize="18" FontFamily="PT Sans" Foreground="#1D212C"/>
+                            <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" Text="{Binding Name}" VerticalAlignment="Center" FontSize="11" FontFamily="PT Sans" Foreground="#92969F" Margin="20,0,0,0" />
+                            <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" Text="{Binding PriceUsd}" VerticalAlignment="Center" FontSize="11" FontFamily="PT Sans" Foreground="#92969F" FontWeight="Bold" Margin="20,0,0,0"/>
+                        </Grid>
+                        <!--<StackPanel Margin="5">
                             <TextBlock FontSize="18" Text="{Binding Rank}" />
                             <TextBlock Text="{Binding Name}" />
                             <TextBlock Text="{Binding PriceUsd}" />
-                        </StackPanel>
+                        </StackPanel>-->
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
