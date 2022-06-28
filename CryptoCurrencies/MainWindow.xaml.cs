@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CryptoCurrencies.Views
+namespace CryptoCurrencies
 {
     /// <summary>
-    /// Interaction logic for CoinsView.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class CoinsView : UserControl
+    public partial class MainWindow : Window
     {
-        public CoinsView()
+        public MainWindow()
         {
             InitializeComponent();
         }

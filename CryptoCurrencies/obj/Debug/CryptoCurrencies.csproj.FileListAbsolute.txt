@@ -19,3 +19,8 @@ D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\CryptoCurrencies.exe
 D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\CryptoCurrencies.pdb
 D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\Views\CoinsView.g.cs
 D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\Views\CoinsView.baml
+D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\MainWindow.g.cs
+D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\MainWindow.baml
+D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\Views\DetailsView.g.cs
+D:\Work\CryptoCurrencies\CryptoCurrencies\obj\Debug\Views\DetailsView.baml

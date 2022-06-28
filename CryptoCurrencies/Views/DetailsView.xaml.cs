@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace CryptoCurrencies.Views
 {
     /// <summary>
-    /// Interaction logic for CoinsView.xaml
+    /// Interaction logic for DetailsView.xaml
     /// </summary>
-    public partial class CoinsView : UserControl
+    public partial class DetailsView : UserControl
     {
-        public CoinsView()
+        public DetailsView()
         {
             InitializeComponent();
         }
